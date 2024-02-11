@@ -1,8 +1,18 @@
 <script setup>
-import Components from './components/Composition.vue'
+import Header from './components/Header.vue'
+import CardList from './components/CardList.vue'
+import Drawer from './components/Drawer.vue'
 </script>
 
 <template>
-  <h1>Hello World</h1>
-  <Components />
+  <Drawer />
+  <div class="bg-white w-4/5 m-auto rounded-xl shadow-xl mt-14">
+    <Header />
+
+    <div class="p-10">
+      <h1 class="text-3xl font-bold mb-8">Все кроссовки</h1>
+
+      <CardList />
+    </div>
+  </div>
 </template>
